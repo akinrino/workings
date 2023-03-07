@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="../css/java.css">
+    <style>
+        *{ 
+            box-sizing: border-box;
+        } 
+        body{ 
+            margin: 0%;
+            align-content: center;
+            width: 100%;
+            background: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .flex{ 
+            display: flex;
+            margin: 12px;
+        }
+        .mini{ 
+            width: 40%;
+            padding: 5px;
+        }
+        .mini2{ 
+            width: 60%;
+            padding: 5px;
+           
+        }
+       
+        .container{ 
+            
+            display: grid;
+            margin:0;
+            text-align: center;
+           
+           
+        }
+       input[type=text]{ 
+           height: 30px;
+           border-radius: 10px; 
+           outline: navajowhite;
+           border-color: 2px solid white;
+           width: 25%;
+           overflow: hidden; 
+           color: white;
+       }
+       input:focus{ 
+           width: 50%;
+        border-radius: 50px 15px ;
+        background-color: black;
+        
+
+       }
+        input[type=radio]{ 
+            cursor: pointer;
+        }
+        fieldset{ 
+            background: rgba(117, 115, 115, 0.1) 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="woo.html" method="GET" target="_self">
+            <fieldset>
+                <legend><h1>REGISTRATION FORM</h1></legend>
+                <div class="flex">
+                    <div class="mini">
+                   <label for="fname"><b> First Name:</b> </label>
+                </div>
+                    <div class="mini2">
+                    <input type="text" name="fname" required placeholder="First-Name" id="fname">
+                </div>
+                </div>
+                <div class="flex">
+                    <div class="mini">
+                    <label for="fname"><b> Last Name: </b></label>
+                </div>
+                <div class="mini2">
+                     <input type="text" name="lname" required placeholder="Last-Name" id="lname">
+                    </div>
+                    </div>
+                 <div class="flex">
+                     <div class="mini">
+                    <label for="fname"> <b> Phone No: </b></label>
+                </div>
+                <div class="mini2">
+                     <input type="text" name="phone no" required placeholder="Phone Number" id="pn">
+                 </div>
+                    </div>
+                <div class="flex">
+                <div class="mini">
+                    <input type="radio" name="Gender" id="" value="Male">
+                </div>
+                <div class="mini2">
+                    Male
+                </div>
+            </div>
+            <div class="flex">
+                <div class="mini">
+                    <input type="radio" name="Gender" id="" value="Female">
+                </div>
+                <div class="mini2">
+                    Female
+                </div>
+            </div>
+            <div class="outer">
+                <button>
+                    REGISTER
+                  </button>
+                  <span></span>
+                  <span></span>
+              </div>
+            </fieldset>
+        </form>
+    </div>
+   
+</body>
+</html>

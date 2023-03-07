@@ -1,0 +1,123 @@
+body{ 
+    background: black;
+}
+.container{ 
+    background: white;
+    margin: 100px 50px;
+    color: white;
+    width: 900px;
+    max-width: 900px;
+    min-width: 100px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+}
+.header{ 
+    background: rgb(240, 222, 222);
+    color: red;
+    padding: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex{ 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 5px;
+    max-width: 900px;
+    min-width: 100px;
+}
+.pink{ 
+    background: pink;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+.purple{ 
+    background: rgb(194, 71, 194);
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+.yellow{ 
+    background: yellow;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+.green{ 
+    background: green;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+.blue{ 
+    background: blue;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+.pink:hover{ 
+    background: pink;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    transition: 0.5S;
+}
+.purple:hover{ 
+    background: rgb(194, 71, 194);
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    transition: 0.5S;
+}
+.yellow:hover{ 
+    background: yellow;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    transition: 0.5S;
+}
+.green:hover{ 
+    background: green;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    transition: 0.5S;
+}
+.blue:hover{ 
+    background: blue;
+    padding: 100px 30px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+    transition: 0.5S;
+}
+.footer{ 
+    width: inherit;
+    text-align: center;
+   font-family: Verdana,sans-serif;
+   padding: 50px;
+}
+a{ 
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: black;
+    overflow: hidden;
+}
+a:hover{ 
+    font-size: 25px;
+    transition: 0.5s;
+    border-left: 2px solid greenyellow;
+    
+}

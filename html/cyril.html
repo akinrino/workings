@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Website Developer </title> 
+	<style>
+*{ 
+box-sizing: border-box;
+
+}
+		.nav-bar{ 
+			display: flex;
+			border: 2px solid black;
+			padding: 20px;
+		}
+		
+		
+		 a{ 
+			padding: 20px;
+			text-decoration: none;
+			color: black;
+			}
+			a:link{ 
+				background-color:transparent;
+			}
+		 a:hover{ 
+			color: grey;
+			background-color: transparent;
+		
+		}
+		 a:visited{ 
+			background-color: red;
+		}
+
+		 a:active{ 
+				background-color: green;
+		}
+		
+		#hide{ 
+			visibility: hidden;
+			background-color: white;
+			box-shadow: 2px 2px 6px 2px grey;
+			border-radius: 5px;
+			display: block;
+			padding: 20px;
+		}
+		#drop-down:hover #hide{  
+			visibility: visible;
+			cursor: pointer;
+			display: block;
+			
+		}
+		#hide>p:hover{ 
+			background-color: rgb(75, 69, 69);
+			color: grey;
+			
+		}
+		@media(max-width:600px) {
+			.nav-bar{ 
+				flex-direction: column;
+				
+			}
+			.link{ 
+				padding: 20px;
+			}
+			#drop-down{ 
+				margin-left: 40px;
+			}
+
+		}
+
+		
+	
+		</style>
+	</head>
+	<body>
+		 <div class="container">
+			<div class="nav-bar">
+				<img src="../pics/star.jpg" alt="" width="100px" height="100px" style="border-radius: 100px;">
+				<div class="link">
+				<a href="david.html">Home</a>
+			</div>
+			<div class="link">
+				<a href="practice.html">About-Us</a>
+			</div>
+			<div class="link">
+				<a href="practice2.html">Contact-Us</a>
+			</div>
+				<span id="drop-down">Blogs <span id="hide"><p>Career Wise</p> <p title="website.com">Visit-us</p> <p>Welcome</p></span></span>
+			</div>
+			<div class="body"> 
+				<h1>
+					HOW TO BECOME A GOOD WEBSITE DEVELOPER
+				</h1>
+			</div>
+		 </div>
+		
+
+			
+		
+			
+		</body>
+		<script>
+			/*var b=0;
+			var a=prompt("Enter Name");
+			for(var i=0;i<=a.length;i++){ 
+				if(a.charAt(i)=="@"){ 
+					b++
+				}
+				
+			}
+			document.write(b)*/
+			 
+			
+		
+		</script>
+		</html>

@@ -1,0 +1,203 @@
+*{ 
+box-sizing: border-box;
+}
+ body{ 
+    margin: 0;
+    padding: 0;
+    
+} 
+.container{ 
+    width: 1000px;
+    background: linear-gradient(to bottom right, blue ,red);
+    display: grid;
+    margin: 0;
+    overflow: hidden;
+}
+.header{ 
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+     padding: 15px; 
+    position: relative;
+    width: inherit;
+     overflow-x: hidden;
+     
+}
+.input{ 
+    width: 500px;
+
+    float: left;
+   margin-left: 150px;
+}
+.input input{ 
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+}
+input:focus{ 
+    background-color: gray;
+    width: 500px;
+    transition: 0.2s;
+}
+.Left{ 
+    width: 500px;
+    float: left;
+    color: black;
+   
+}
+.left,a{ 
+    padding: 10px;
+    text-decoration: none;
+    float: left;
+    color: black;
+}
+a:hover{ 
+    border-bottom: 2px solid grey;
+    color: grey;
+
+    
+}
+
+
+.main{ 
+    margin: 20px 60px 0px 60px;
+    display: grid;
+    width: inherit;
+    overflow: hidden;
+}
+.first{ 
+    display: flex;
+    width: inherit;
+}
+#green{ 
+    color: green;
+}
+.cut{ 
+    
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    
+}
+#one{ 
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.book{ 
+   width: 475px;
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+    
+    
+}
+#blue{ 
+    background-color: blue;
+    padding: 20px;
+    width: 200px;
+}
+.left2{ 
+    margin-left: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    width: 950px;
+    
+}
+.outer{ 
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+   width: 475px;
+}
+.image{ 
+    margin-top: 100px;
+    margin-right: 10px;
+    width:200px ;
+}
+.text{ 
+width: 275px;
+}
+h5{ 
+    color: red;
+    margin-bottom: 0px;
+}
+.second{ 
+    width: 1000px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+overflow: hidden;
+}
+.second div{ 
+    width: 500px;
+}
+#two{ 
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+
+h6{ 
+    margin-bottom: 0px;
+}
+.footer{ 
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.bottom{ 
+    padding: 30px;
+}
+.foot2{ 
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    text-align: center;
+   width: 900px;
+   padding: 20px;
+   float: left;
+   
+}
+.white p{ 
+background-color: blue;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+margin-top: 120px;
+padding: 10px;
+color: white;
+}
+.white{ 
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    align-content: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer; 
+    transition: 0.5s;                                          
+}
+.white:hover{ 
+    box-shadow: 2px 2px 6px 4px rgb(230, 152, 152);
+    transition: 0.5s; 
+}
+.white p:hover{ 
+    box-shadow: 2px 2px 6px 4px rgb(230, 152, 152);
+    transition: 0.5s;
+}
+#three{ 
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    
+}
+.dave{ 
+    
+    background-color: rgb(72, 72, 236);
+   padding: 10px 50px 10px 50px;
+   color: white;
+}

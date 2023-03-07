@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript form</title>
+<script>
+function validate()
+{
+var emailError = checkEmail();
+var radioError = checkRadio();
+var dropdownError = checkDropdown();
+var checkboxError = checkCheckbox();
+
+if(emailError && radioError && dropdownError && checkboxError)
+{
+document.frmOne.submit();
+}
+else
+{
+return false;
+}
+
+
+}
+
+function checkEmail()
+{
+var email = document.frmOne.email.value;
+if(email == "")
+{
+document.getElementById("email_error").innerHTML = "No Email Address";
+return false;
+}
+else
+{
+document.getElementById("email_error").innerHTML = "";
+return true;
+}
+}
+
+function checkRadio()
+{
+var payment = "";
+var len = document.frmOne.payment.length;
+var i;
+
+for(i = 0; i < len;  i++)
+{
+if(document.frmOne.payment[i].checked)
+{
+payment = document.frmOne.payment[i].value;
+break;
+}
+}
+
+if(payment == "")
+{
+document.getElementById("radio_error").innerHTML = "No payment option selected";
+return false;
+}
+else
+{
+document.getElementById("radio_error").innerHTML = "";
+return true;
+}
+}
+
+function checkDropdown()
+{
+var chosen = "";
+var len = document.frmOne.hear.length;
+var i;
+
+for(i = 0; i < len; i++)
+{
+if(document.frmOne.hear[i].selected)
+{
+chosen = document.frmOne.hear[i].value;
+}
+}
+
+if(chosen == "None")
+{
+document.getElementById("dropdown_error").innerHTML = "No option chosen";
+return false;
+}
+else
+{
+document.getElementById("dropdown_error").innerHTML = "";
+return true;
+}
+
+}
+
+function checkCheckbox()
+{
+if(document.frmOne.terms.checked)
+{
+document.getElementById("checkbox_error").innerHTML = "";
+return true;
+}
+else
+{
+document.getElementById("checkbox_error").innerHTML = "TAC not checked";
+return false;
+}
+}
+</script>
+
+</head>
+
+<body>
+<form name = "frmOne" action = "" method = "post">  
+
+<p>
+Email: <input type = "text"  name = "email" value = "" placeholder="Enter email address">
+<span style = "color:red;" id = "email_error"></span>
+</p>
+
+<p>
+Payment Options:
+<input type = "radio" name = "payment" value = "CC">Credit Card
+<input type = "radio" name = "payment" value = "DC">Debit Card
+<input type = "radio" name = "payment" value = "PP">PayPal
+<span style = "color: red;" id = "radio_error"></span>
+</p>
+
+<p>
+Where did you hear about us?
+<select name = "hear">
+<option value = "None">None</option>
+<option value = "paper">Newspaper</option>
+<option value = "tv">Television</option>
+<option value = "mouth">Word of mouth</option>
+<option value = "seach">Search Engine</option>
+</select>
+<span style = "color: red;" id = "dropdown_error"></span>
+</p>
+
+<p>
+<label for = "CB1">Terms and Conditions</label>
+<input type = "checkbox" Name = "terms" ID ="CB1" value ="TAC">
+<span style = "color:red;" id = "checkbox_error"></span>
+</p>
+
+<p>&nbsp;</p>
+<input type = "button"  value = "SUBMIT"   onclick = "validate();">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeTime</title>
+</head>
+<body>
+        <button onclick="showDate()">Display Date</button>
+        <p id="demo"></p>
+            
+
+
+    <script>
+               var nominals=["<sup> st </sup>","<sup> nd </sup>","<sup> rd </sup>","<sup> th </sup>"]
+               
+                // var date=new Date()
+                // var c=date.getDate()
+                // function showDate()
+                // { 
+                //     if(c==1)
+                //     {
+                //         document.getElementById("demo").innerHTML=c+nominals[0];
+                //     }
+                //     else if(c==2)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[1];
+                //     }
+                //     else if(c==3)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[2];
+                //     }
+                //     else if(c>3 && c<21)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[3];
+                //     }
+                //     else if(c==21)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[0];
+                //     }
+                //     else if(c==22)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[1];
+                //     }
+                //     else if(c==23)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[2];
+                //     }
+                //     else if(c>23 && c<31)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[3];
+                //     }
+                //     else if(c==31)
+                //     { 
+                //         document.getElementById("demo").innerHTML=c+nominals[0];
+                //     }
+                    
+                // }
+                var date=new Date()
+                 var c=date.getDate()
+                 var st=/(1|21|31)/
+                 var nd=/(2|22)/
+                 var rd=/(3|23)/
+                 var test;
+                var 
+                 
+                 function showDate()
+                 { 
+                     if(c==st.match(st))
+                     {
+                        document.getElementById("demo").innerHTML=c+nominals[0];
+                     }
+                     else if(c==test.match(nd ))
+                     { 
+                        document.getElementById("demo").innerHTML=c+nominals[1];
+                     }
+                     else if(c==test.match(rd))
+                     { 
+                        document.getElementById("demo").innerHTML=c+nominals[2];
+                     }
+                     else
+                     { 
+                        document.getElementById("demo").innerHTML=c+nominals[3];
+                     }
+                    
+                 }
+    </script>
+    
+     
+</body>
+</html>

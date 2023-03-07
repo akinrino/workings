@@ -1,0 +1,66 @@
+
+*{ 
+    box-sizing: border-box;
+}
+body
+{ 
+    background-color: black
+}
+.container
+{ 
+    padding: 20px;
+    width: fit-content;
+    
+    
+}
+.nav-bar
+{ 
+    background-color: grey;
+    padding: 30px;
+}
+.first
+{ 
+    background-image: url(../pics/best.jpg);
+    
+    background-size: cover;
+    margin-top: 50px;
+}
+#font_size
+{ 
+    padding: 20px;
+    font-family: cursive;
+    font-size: 40px;
+    color: white;
+    text-align: right;
+}
+.second
+{ 
+    margin-top: 50px;
+   display: flex;
+    
+}
+.grid
+{ 
+    width: 50%;
+    padding: 20px;
+   
+}
+.text
+{ 
+    
+    background-color: white;
+    padding: 20px ;
+    margin-top: 0%;
+    text-align: center;
+    font-family: cursive;
+}
+button
+{ 
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(104, 104, 248);
+    color: white;
+    cursor: pointer;
+    border: none;
+}

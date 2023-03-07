@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book session</title>
+  <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="input">
+                <input type="text" placeholder="search-box">
+            </div>
+            <div class="left">
+                <a href="templates.html">Home</a>
+                <a href="form.html">About us</a>
+                <a href="templates1.html">Services</a> 
+                <a href="form.html">Register</a>
+                <a href="david.html">Blog</a>  
+            </div>
+        </div>
+        <div class="main">
+            <div class="first">
+                <div class="cut">
+                    <img src="../pics/logo.png" alt="skool" width="100px" height="100px">
+                    
+                </div>
+                <div class="left2">
+                    <div class="outer">
+                <div class="image">
+                    <img src="../pics/best.jpg" alt="" id="one"  >
+                </div>
+                <div class="text">
+                    <h4>
+                        Like Eduford
+                    </h4>
+                        house of representative
+                    <p>
+                        Assembly of the street Nation
+                    </p>
+                        like me if you want <span id="green">blah blah blah</span>
+                        
+                </div>
+                </div>
+                    <div>
+                        <div class="book">
+                        <p id="blue"> Book Session</p>
+                            Ask Question
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div>
+                   <h5>ABOUT COURSE</h5> 
+                    I have taught for 5 years at the Richard Ivery school of <br>
+                    Business at Westeren University, I was recommended as a <br>
+                    top Lecturer at the university and was selected to the Desert <br>
+                    Honor link for teaching academy every year i was <br>
+                    employed link.
+                    <h5>EDUCATIONAL PROMOTION</h5>
+                    <ul style="list-style-type: circle;">
+                        <li><h6>Business</h6></li>
+                            yoga school of business <br>
+                            pdg degree
+                            <hr>
+                            <li><h6>Business</h6></li>
+                            yoga school of business <br>
+                            pdg degree
+                            <hr>
+                            <li><h6>Business</h6></li>
+                            yoga school of business <br>
+                            pdg degree
+                            <hr>
+                            <li><h6>Business</h6></li>
+                            yoga school of business <br>
+                            pdg degree
+                        
+                            </ul>    
+
+                   
+                </div>
+                <div>
+                   <img src="../pics/certificate.jpg" name="img" alt="" id="two">
+                  <p><button>&#10094 </button onclick="previous()"> <button onclick="next()">&#10095 </button>     </p> 
+                   
+                   <h5>NIGER EXPERIENCE</h5>
+                   <ul style="list-style-type: circle;">
+                        <li>
+                            Torrents District School Board
+                        </li>
+                        <hr>
+                        <li>
+                           <p> Torrents District School Board</p>
+                        </li>
+                        
+                   </ul>
+                   
+                </div>
+            </div>
+            <h5> REFRENCES</h5>
+            <div class="footer">
+           <div> <img src="../pics/Penguins.jpg" alt="" id="one"></div>
+          <div class="bottom"> I have taught for 5 years at the Richard Ivery school of 
+                  Business at Westeren University, I was recommended as a 
+                    top Lecturer at the university  <hr style="margin-top: 50px;"></div>
+                </div> 
+                  <h5>SIMILAR TUTORS</h5>  
+                  <div class="foot2">
+                      <div class="white">
+                        <img src="../pics/best.jpg" alt="" id="three">
+                        <h3>GEORGE BUSH</h3>
+                        <p>
+                            Common Name
+                        </p>
+                      </div>
+                      <div class="white">
+                        <img src="../pics/best.jpg" alt="" id="three">
+                        <h3>GEORGE BUSH</h3>
+                        <p>
+                            Common Name
+                        </p>
+                    </div>
+                    <div class="white">
+                        <img src="../pics/best.jpg" alt="" id="three">
+                        <h3>GEORGE BUSH</h3>
+                        <p>
+                            Common Name
+                        </p>
+                    </div>
+                    <div class="white">
+                        <img src="../pics/best.jpg" alt="" id="three">
+                        <h3>GEORGE BUSH</h3>
+                        <p>
+                            Common Name
+                        </p>
+                    </div>
+                  </div> 
+
+        </div>
+    </div>
+</body>
+<script>
+    var a=new Image()
+    var b=new Image()
+    var c=new Image()
+       
+
+    a.src="../pics/best.jpg"
+    b.src="../pics/business.jpeg"
+    c.src="../pics/certificate.jpg"
+    
+
+    var array=new Array(a,b,c)
+    var counter=0;
+    var end=array.length-1
+    function previous(){ 
+        if(counter==0){ 
+            counter=end
+            
+        }
+        else{ 
+                counter--
+        }
+        document.img.src=array[counter].src
+        }
+        
+    
+      function next(){ 
+        if(counter==end){ 
+           counter=0
+        }     
+        else{ 
+            counter++
+        }
+        document.img.src=array[counter].src                  
+    }
+
+</script>
+</html>

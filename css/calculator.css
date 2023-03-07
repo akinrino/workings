@@ -1,0 +1,37 @@
+.blue{ 
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    
+}
+.flex{ 
+    display: flex;
+}
+.container2{ 
+    display: grid;
+    background-color: black;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+.container{ 
+    display: flex;
+    
+    
+}
+.blue2{ 
+    display: grid;
+    background-color: black;
+    justify-content: space-evenly;
+
+
+}
+.result{ 
+    width: 200px;
+    background-color: gray;
+    height: 100px;
+    color: black;
+    font-size: 3rem;
+}

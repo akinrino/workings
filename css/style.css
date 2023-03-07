@@ -1,0 +1,110 @@
+       .container:hover{
+            background-image: url(../pics/best.jpg);
+            transition: 0.5s;
+        }
+        .container{ 
+            background-image: url(../pics/nice.jpg);
+            background-size: cover;
+            display: grid;
+           transition: 0.5s;           
+        }
+        .header{ 
+            display: grid;
+        }
+        .inn-header{ 
+            
+            background-color: rgb(128, 128, 128);
+            color: white;
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+            position: relative;
+        }
+        .inn-header,img{ 
+            padding: 20px;
+        }
+       
+        .nav-bar{ 
+            position: absolute;
+            background-color: white;
+            
+            display: flex;
+            margin-left: 70px;
+            border-radius: 5px;
+            position: absolute;
+            margin-top: 70px;
+            
+            
+        
+        }
+      
+        .text-box{ 
+           
+            border: none;
+            width: fit-content;
+            padding: 20px 20px 10px 20px;
+            margin-left: 70px;
+            
+            
+            
+        }
+        .button{ 
+            height: 40px;
+            border-radius: 5px;
+            
+        }
+        .content{ 
+            
+            text-align: center;
+            display: grid;
+            margin-top: 100px;
+        }
+        #big{ 
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            
+        }
+        .contact{ 
+            background-color:orangered;
+            padding: 2px;
+            width: 200px;
+            margin-top: 50px;
+            margin-left:400px;
+            border-radius: 5px;
+        }
+        b,p{ 
+            font-size: 15px;
+            color: white;
+        }
+       .link,a{ 
+        padding: 30px 20px 10px 20px;
+        text-decoration: none;
+        color: black;
+       }
+      a:hover{ 
+           color: grey;
+           border-bottom: 2px solid orangered;
+       }
+       .footer{            
+           margin-top: 300px;
+           background-color: white;
+           
+          
+       }
+       .inn-footer{ 
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px 0px 30px 0px;
+        
+        
+       }
+       .butt{ 
+        background-color:orangered;
+           padding: 20px;
+           width: 150px;
+           text-align: center;
+           color:white;
+           border-radius: 5px;
+       }

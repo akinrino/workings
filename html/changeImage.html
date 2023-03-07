@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button style="width: 50px; height: 50px; border-radius: 50px; cursor: pointer; background-color: rgb(40, 189, 40);" onclick="next()">Front</button>
+    <img src="../pics/Lighthouse.jpg" alt="" width="200px" height="200px" name="img" style="border-radius: 200px;">
+    <button style="width: 50px; height: 50px; border-radius: 50px; cursor: pointer;background-color: red;" onclick="previous()">Back</button>
+    <script>
+        var a=new Image()
+        var b=new Image()
+        var c=new Image()
+        var d=new Image()
+        var e=new Image()  
+        var f=new Image()    
+
+        a.src="../pics/Lighthouse.jpg"
+        b.src="../pics/koala.jpg"
+        c.src="../pics/jellyfish.jpg"
+        d.src="../pics/download.jpg"
+        e.src="../pics/penguins.jpg"
+        f.src="../pics/Tulips.jpg"
+
+        var array=new Array(a,b,c,d,e,f)
+        var counter=0;
+        var end=array.length-1
+        function previous(){ 
+            if(counter==0){ 
+                counter=end
+                
+            }
+            else{ 
+                    counter--
+            }
+            document.img.src=array[counter].src
+            }
+            
+        
+          function next(){ 
+            if(counter==end){ 
+               counter=0
+            }     
+            else{ 
+                counter++
+            }
+            document.img.src=array[counter].src                  
+        }
+
+    </script>
+</body>
+</html>

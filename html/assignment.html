@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+<div class="container">
+    <form action="../html/JAVA.HTM" name="myForm" onsubmit="return validateForm()">
+        <h3>
+            NAME
+        </h3>
+        <input type="text" name="fname">
+        <input type="submit" value="click me">
+    </form>
+</div>
+
+  <script>
+
+
+    //    var i=0;
+    //     while (i<=8) { 
+    //         i++
+    //         document.write(i +"-")
+    //     }
+    //         document.write(10)
+
+
+
+      /* var first= parseInt(prompt("input first num", "")) ; 
+        var second=parseInt(prompt("input second num", ""));
+        var result= first+second
+        if(first==second){ 
+            alert("triple of the number is " + result*3)
+        }
+        else{ 
+            alert("addition of the first and second number: "+ result)
+        }*/
+
+
+        
+     
+    /* var num=0;
+     var sum=0;
+     for (num=0;num<=30;num++) {
+         
+         sum= sum+num;
+            }
+            alert("Addition of integers 0 - 30 is: " + sum)*/
+
+            
+          /*  var result=0;
+          var num=parseInt(prompt("Input Number")) 
+          document.write(num)
+          for(var result=num; num>=2 && num<=result ;--num ){ 
+              result=result*(num-1);
+              
+              document.write( " * " + (num-1))
+          }
+          document.write(" = " + result)*/
+          
+          
+                
+                  /*  var school=/^if$/;
+                    var donut=prompt("Enter Name")
+                    if (donut!==school) {
+                        alert( "if " + donut)
+                    }
+                    alert(donut)*/
+
+  /*  //Create An Input Field
+     var words= prompt("Enter words ") 
+//Used A Looping Construct      
+         for(var i=1; i<=words.length;++i)
+     {
+//Used The charAt method to display the values
+     var remove = words.charAt(words.length-i)
+    document.write(remove)  
+    }  */
+
+
+
+// create an input field
+
+function validateForm()
+{ 
+    var x=document.forms["myForm"]["fname"].value;
+    if(x=="")
+    { 
+        alert("name must be filled out")
+        return false;
+    }
+}
+
+
+
+
+
+       
+         
+        
+    
+       
+// var a="Mozilla/5.0(ipad; CPU OS 5_0_1 like Mac OS X"
+// var b=[a.substring(12,16),a.substring(36,44)]
+// document.write(b[0] + " " + b[1])
+   
+
+       
+        
+    </script>
+
+</body>
+</html>
